@@ -10,7 +10,7 @@ int bot_high(int points_bot1, int points_bot2, int round, int wybory1[], int wyb
     }
     if(botChoice > enemyChoice){
         if(enemyChoice - 20 >= 180)
-            return rand() % 20 - enemyChoice;
+            return enemyChoice - (rand() % 20);
         return 300;
     }
     else{
