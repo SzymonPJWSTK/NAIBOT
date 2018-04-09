@@ -21,7 +21,7 @@ int bot_high(int points_bot1, int points_bot2, int round, int wybory1[], int wyb
     if(botChoice >= enemyChoice){
         if(tact >= 180)
             return tact;
-        return 300;
+        return 180;
     }
     else{
         if(((enemyChoice - botChoice)/2) + botChoice > 300)
