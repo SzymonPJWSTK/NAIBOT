@@ -40,7 +40,7 @@ int main()
     cout << "Ncisnij ENTER aby kontynuowac...";
     getchar();
     system("clear");
-    cout << "Koniec gry!\n\t GoodCop  uzyskal: "  << SCORE[0] << "\n\t BadCop  uzyskal: "
+    cout << "Koniec gry!\n\t GoodCop  uzyskal: "  << SCORE[0] << "\n\t BadCop  uzyskal:  "
     << SCORE[1] << endl;
     getchar();
     return 0;
