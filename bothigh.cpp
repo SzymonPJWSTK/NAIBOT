@@ -3,18 +3,15 @@
 int bot_high(int points_bot1, int points_bot2, int round, int wybory1[], int wybory2[])
 {
     int enemyChoice = wybory2[round-1];
+    int previousEnemyChoice = wybory2[round-2];
     int botChoice = wybory1[round-1];
     if(round == 0){
-        return 220;
+        return rand() % 120 + 180;
     }
     if(botChoice > enemyChoice){
-        if(enemyChoice > 190)
-            return enemyChoice - 10;
-        if(enemyChoice > 185)
-            return enemyChoice - 5;
-        if(enemyChoice > 180)
-            return enemyChoice - 1;
-        return 180;
+        if(enemyChoice - 20 >= 180)
+            return rand() % 20 - enemyChoice;
+        return 300;
     }
     else{
         if(((enemyChoice - botChoice)/2) + botChoice > 300)
