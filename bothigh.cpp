@@ -12,6 +12,8 @@ int bot_high(int points_bot1, int points_bot2, int round, int wybory1[], int wyb
             max = tMax;
         }
     }
+    if (max = 120)
+        max--;
     int tact = enemyChoice-(max + 1);
     if(round == 0){
         return rand() % 120 + 180;
