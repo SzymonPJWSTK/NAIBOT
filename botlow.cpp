@@ -18,9 +18,9 @@ int bot_low(int points_bot1, int points_bot2, int round, int wybory1[], int wybo
     }
 
     if(botChoice == 280 || botChoice == 300)
-        return 250;
+        return 220;
     else if (botChoice < 200)
-        return 300;
+        return 180;
 
     int ranValue = (rand() % 20);
 
